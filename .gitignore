@@ -26,6 +26,8 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
@@ -192,3 +194,13 @@ cython_debug/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+
+
+
+# Custom
+venv/
+.pytest_cache/
+.vscode/
+part1/__pycache__/
+part1/.pytest_cache/
