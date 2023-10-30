@@ -204,3 +204,4 @@ venv/
 .vscode/
 part1/__pycache__/
 part1/.pytest_cache/
+.gitignore
