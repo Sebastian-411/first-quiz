@@ -36,7 +36,7 @@ Here are some tips!
 - You can do this using any platform: draw the solution on a piece of paper and upload a picture of it, Google Drawings, a free Miro board, or any other virtual whiteboard method.
 
 
-_The final submission must be a photo file and should NOT be saved in this repository. Please make sure to keep it separate and then upload it in the submission form._
+_The final submission must be a photo file and should NOT be saved in this repository. Please make sure to keep it separate and then upload it in the submission form._   
 
 ## System Security
 

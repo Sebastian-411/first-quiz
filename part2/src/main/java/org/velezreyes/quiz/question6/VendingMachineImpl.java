@@ -3,6 +3,8 @@ package org.velezreyes.quiz.question6;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.velezreyes.quiz.question6.drinks.*;
+
 public class VendingMachineImpl implements VendingMachine {
 
   private Map<String, Drink> availableDrinks = new HashMap<>();
@@ -13,8 +15,8 @@ public class VendingMachineImpl implements VendingMachine {
   }
 
   public VendingMachineImpl() {
-    availableDrinks.put("ScottCola", new DrinkImpl("ScottCola", 75, true));
-    availableDrinks.put("KarenTea", new DrinkImpl("KarenTea", 100, false));
+    availableDrinks.put("ScottCola", new ScottCola());
+    availableDrinks.put("KarenTea", new KarenTea());
   }
 
   @Override
