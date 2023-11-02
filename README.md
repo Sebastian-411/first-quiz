@@ -34,7 +34,7 @@ There is a multi-step submit process. Please make sure you follow these instruct
 2. Your submission must be with this filename-- we will not accept any submissions that do not match the file pattern.
 3. Upload your patch, binaries, and other required information in this [form](https://forms.gle/UYnRpDorzThZmdhD7)! You can go back and update your answers as much as you want before the deadline.
 
-We will NOT accept pull requests or branches-- please make sure you use the diff generation method to generate your patch.
+DO NOT OPEN A PULL REQUEST-- this will disqualify you. We will NOT accept pull requests or branches-- please make sure you use the diff generation method to generate your patch.
 
 ### The deadline is Sunday, November 5th at 3:00pm Colombia.
 We will judge the timeliness of submissions by the timestamp of your form submission. You will be notified of your results on November 8th.
@@ -56,17 +56,19 @@ Remember that our team is here for you, and truly excited that each and everyone
 
 We highly recommend that you find a way to complete this challenge locally. We have designed this to require minimal packages, and if you have access to a Linux terminal, you should be able to edit and run all the code. If you absolutely cannot do so at this stage, you can also use most online REPLs such as Github Dev or REPL.it which should support the packages needed. Please keep in mind that the second stage requires a proper localhost environment setup for full stack development.
 
+If you don't have a native Linux terminal, and for example, are with a Windows machine, you can also find workarounds that allow you to get the code up and running! We encourage you to use the internet to find the equivalent commands to run the code. Remember, too, that we have provided _convenience_ configuration commands, but they are not entirely necessary to complete the test.
+
 *What if I don't understand certain instructions?*
 
 Part of the test is seeing an existing code base and being able to navigate the documentation and files no matter what. We encourage you to use Google, translators, and to play around with the code until it makes more sense how to proceed. The ver+ team will unfortunately NOT be providing clarifications to the instructions.
 
+*Can I make edits to any file? Including the test files?*
+
+Great question! It is up to you to edit and decide what is necessary to make a complete submission. We value attention to detail so please feel free to make necessary edits when you find them!
+
 *What if I discover a bug with the code?*
 
 If you believe you've discovered a true error that would prevent anyone from completing the test, please message Karen Sun in the Slack channel. You should have received a link to the Slack channel if you are eligible for this stage of the test!
-
-*What if I want to make changes to my pull request?*
-
-Yay! That's the beauty of Git. If you create your pull request before the deadline and would like to make changes, go ahead and push new commits to your pull request. We will only judge the most recent code before the deadline. In fact, we encourage you to create a pull request early and make constant pushes.
 
 *I found this repository. Can I make a submission?*
 
