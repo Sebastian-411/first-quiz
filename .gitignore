@@ -204,6 +204,7 @@ venv/
 .vscode/
 part1/__pycache__/
 part1/.pytest_cache/
+part1/quiz_pets
 .gitignore
 part1/quiz_pets
 
