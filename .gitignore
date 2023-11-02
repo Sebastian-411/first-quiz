@@ -212,4 +212,5 @@ part1/quiz_pets
 first_quiz_submission.patch
 part2/target/
 part2/pom.xml
+.gitignore
 
