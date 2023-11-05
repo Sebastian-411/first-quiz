@@ -7,7 +7,7 @@ import org.velezreyes.quiz.question6.drinks.*;
 
 public class VendingMachineImpl implements VendingMachine {
 
-  private Map<String, Drink> availableDrinks = new HashMap<>();
+  private Map<String, Class<? extends Drink>> availableDrinks = new HashMap<>();
   private int userBalance = 0;
 
   public static VendingMachine getInstance() {
@@ -15,8 +15,8 @@ public class VendingMachineImpl implements VendingMachine {
   }
 
   public VendingMachineImpl() {
-    availableDrinks.put("ScottCola", new ScottCola());
-    availableDrinks.put("KarenTea", new KarenTea());
+    availableDrinks.put("ScottCola", ScottCola.class);
+    availableDrinks.put("KarenTea", KarenTea.class);
   }
 
   @Override
@@ -26,9 +26,16 @@ public class VendingMachineImpl implements VendingMachine {
 
   @Override
   public Drink pressButton(String name) throws NotEnoughMoneyException, UnknownDrinkException {
-    Drink drink = availableDrinks.get(name);
+    Class<? extends Drink> drinkClass = availableDrinks.get(name);
 
-    if (drink == null) {
+    if (drinkClass == null) {
+      throw new UnknownDrinkException();
+    }
+
+    Drink drink;
+    try {
+      drink = drinkClass.newInstance();
+    } catch (InstantiationException | IllegalAccessException e) {
       throw new UnknownDrinkException();
     }
 
